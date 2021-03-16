@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Chess</h1>
+    </header>
+
+    <form>
+        <label for="name">Name</label>
+        <input id="name" placeholder="Enter name" name="name" type="text">
+        <input type="submit" value="OK">
+    </form>
+
+    <table>
+        <tr>
+            <td class="cell white">
+                <span class="box top">1</span>
+            </td>
+            <td class="cell black"></td>
+            <td class="cell white">
+                <img src="images/wr.png" alt="wr">
+            </td>
+            <td class="cell black">
+                <img src="images/wr.png" alt="wr">
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+        </tr>
+        <tr>
+            <td class="cell black">
+                <div>
+                    <span class="box top">2</span>
+                    <div class="box">
+                        <img src="images/wp.png" alt="wp">
+                    </div>
+                </div>
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black">
+                <img src="images/wk.png" alt="wk">
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+            <td class="cell white">
+                <img src="images/wq.png" alt="wq">
+            </td>
+            <td class="cell black">
+                <img src="images/wp.png" alt="wp">
+            </td>
+            <td class="cell white">
+                <img src="images/wp.png" alt="wp">
+            </td>
+        </tr>
+        <tr>
+            <td class="cell white">
+                <span class="box top">3</span>
+            </td>
+            <td class="cell black">
+                <img src="images/wp.png" alt="wp">
+            </td>
+            <td class="cell white">
+                <img src="images/bq.png" alt="bq">
+            </td>
+            <td class="cell black">
+                <img src="images/wp.png" alt="wp">
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black">
+                <img src="images/wp.png" alt="wp">
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+        </tr>
+        <tr>
+            <td class="cell black">
+                <span class="box top">4</span>
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+            <td class="cell white"></td>
+            <td class="cell black">
+                <img src="images/wp.png" alt="wp">
+            </td>
+            <td class="cell white">
+                <img src="images/wn.png" alt="wn">
+            </td>
+            <td class="cell black"></td>
+            <td class="cell white"></td>
+        </tr>
+        <tr>
+            <td class="cell white">
+                <span class="box top">5</span>
+            </td>
+            <td class="cell black">
+                <img src="images/bn.png" alt="bn">
+            </td>
+            <td class="cell white">
+                <img src="images/bp.png" alt="bp">
+            </td>
+            <td class="cell black"></td>
+            <td class="cell white"></td>
+            <td class="cell black">
+                <img src="images/bp.png" alt="bp">
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+        </tr>
+        <tr>
+            <td class="cell black">
+                <span class="box top">6</span>
+                <div class="box">
+                    <img src="images/bp.png" alt="bp">
+                </div>
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+            <td class="cell white">
+                <img src="images/bp.png" alt="bp">
+            </td>
+            <td class="cell black"></td>
+            <td class="cell white"></td>
+            <td class="cell black">
+                <img src="images/bp.png" alt="bp">
+            </td>
+            <td class="cell white"></td>
+        </tr>
+        <tr>
+            <td class="cell white">
+                <span class="box top">7</span>
+            </td>
+            <td class="cell black">
+                <img src="images/bk.png" alt="bk">
+            </td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+            <td class="cell white"></td>
+            <td class="cell black"></td>
+            <td class="cell white"></td>
+            <td class="cell black">
+                <img src="images/bp.png" alt="bp">
+            </td>
+        </tr>
+        <tr>
+            <td class="cell black">
+                <span class="bottom-box top">h</span>
+                <span class="box top">8</span>
+            </td>
+            <td class="cell white">
+                <span class="bottom-box top">g</span>
+            </td>
+            <td class="cell black">
+                <span class="bottom-box top">f</span>
+                <div class="box">
+                    <img src="images/br.png" alt="br">
+                </div>
+            </td>
+            <td class="cell white">
+                <span class="bottom-box top">e</span>
+            </td>
+            <td class="cell black">
+                <span class="bottom-box top">d</span>
+            </td>
+            <td class="cell white">
+                <span class="bottom-box top">c</span>
+            </td>
+            <td class="cell black">
+                <span class="bottom-box top">b</span>
+            </td>
+            <td class="cell white">
+                <span class="bottom-box top">a</span>
+                <div>
+                    <img src="images/br.png" alt="br">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+   <a href="https://en.wikipedia.org/wiki/Chess">wiki</a>
+   <a href="https://www.chess.com/puzzles/problem/134311">example</a>
+
+
+    <form method="post">
+        <div>
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </div>
+        <div>
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div>
+            <label for="drink">Choose a car:</label>
+            <select id="drink" name="drink" size="2">
+            <option value="pepsi_cola">pepsi cola</option>
+            <option value="coca_cola">coca cola</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="myfile" hidden>Select a file:</label>
+            <input type="file" id="myfile" name="myfile" hidden>
+        </div>
+        <div>
+            <label for="age">AGE (between 0 and 100):</label>
+            <input type="range" id="age" name="age" min="0" max="100">
+        </div>
+        <div>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        </div>
+        <div>
+            <input type="submit" value="Submit" onclick="submit_form()">
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+        <div>
+            <textarea id="textarea" name="textarea" rows="10" cols="30">The cat was playing in the garden.</textarea>
+        </div>
+                <div>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        </div>
+    </form>
+
+    <br>
+    <button onclick="clear_textarea()">Click Me!</button>
+    <script src='app.js' > </script>
+</body>
+
+</html>
