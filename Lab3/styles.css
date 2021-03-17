@@ -91,6 +91,7 @@ img {
 .flex-div{
     justify-content: space-around;
     margin-top: 5em;
+    margin-bottom: 3em;
     display: flex;
 }
 
@@ -104,7 +105,6 @@ canvas {
     height: 2.5em;
     background-color: #bcbcbc;
     color: white;
-    margin: auto;
     border-style: solid;
     border-width: 0;
     border-radius: 3px;
