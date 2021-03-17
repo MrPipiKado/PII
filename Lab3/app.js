@@ -70,16 +70,25 @@ if(message)
 }
 
 let timerElement = document.getElementById('timer')
-let timerSeconds = 0
+let timerSeconds = 10
+let runTimer = null
+let startButton = null
 createChart()
 
 function onStartClicked(){
-    setInterval(timer, 1000)
+    startButton = document.getElementById('startButton')
+    startButton.disabled = true
+    runTimer = setInterval(timer, 1000)
 }
 
 function timer(){
-    timerSeconds += 1
-    timerElement.innerHTML = getTimeString(timerSeconds)
+    timerSeconds -= 1
+    timerElement.innerHTML = getTimeString(timerSeconds);
+    if(timerSeconds === 0){
+        clearInterval(runTimer)
+        startButton.disabled = false
+        timerSeconds = 10
+    }
 }
 
 function getTimeString(time){

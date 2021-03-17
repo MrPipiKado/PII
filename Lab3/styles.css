@@ -66,3 +66,14 @@ canvas {
     max-width: 50%;
     max-height: 50%;
 }
+
+.Button {
+    position: absolute;
+    background-color: dimgrey;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 9px grey;
+    padding: 7px 12px;
+    left: 47em;
+    top: 7em;
+  }
