@@ -187,6 +187,7 @@
         <input id="startButton" type="submit" onclick="onStartClicked()" class="Button">
         <span class="text-dark" id="timer">00 : 00</span>
     </div>
+    <div class="main">
     <form method="get">
         <div>
             <label for="firstname">First name:</label><br>
@@ -220,12 +221,13 @@
             </select>
         </div>
         <div>
-            <input type="submit" value="Submit" onclick="submit_form()">
+            <input type="submit" value="Submit" onclick="submit_form()" class="Button">
         </div>
         <div>
-            <input type="reset">
+            <input type="reset" class="Button">
         </div>
     </form>
+        </div>
 
     <div class="flex-div">
         <canvas id="myChart"></canvas>
