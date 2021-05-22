@@ -10,6 +10,25 @@ header {
   text-align: center;
   color: black;
 }
+main{
+   position: relative; 
+}
+
+a:link {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: darkgray;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: midnightblue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
 .cell {
     width: 4em;
@@ -61,13 +80,18 @@ img {
     background-color: #efefef;
     border-style: solid;
     border-width: 0.1em;
-    width: 30em;
+    width: 32em;
     margin: auto;
     position: relative;
 }
 
 .form-item{
     margin: 0.5em;
+    border-spacing: 0;
+    color: #301c1c;
+    text-align: center;
+    padding: 0 20px;
+
 }
 .styled-text{
     font-family: 'Open Sans', sans-serif;
@@ -109,8 +133,39 @@ canvas {
     border-width: 0;
     border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 7px #666;
+    padding: 7px 12px;
+    cursor: pointer;
 }
+
+.button:hover{
+    background-color: dimgray;
+}
+
+    .button:active {
+        background-color: black;
+        color: white;
+        box-shadow: 0 5px #d3cece;
+        transform: translateY(2px);
+    }
 
 .center-div{
     text-align: center;
+}
+
+.chart{
+    width: 65em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.footer{
+    min-width: 800px;
+    background-color: gray;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
 }

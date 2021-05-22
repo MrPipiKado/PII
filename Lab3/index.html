@@ -180,9 +180,9 @@
             </td>
         </tr>
     </table>
-
-   <a href="https://en.wikipedia.org/wiki/Chess">wiki</a>
-   <a href="https://www.chess.com/puzzles/problem/134311">example</a>
+   <br>
+   <a class ="styled-text form-container" href="https://en.wikipedia.org/wiki/Chess">wiki</a>
+   <a class ="styled-text form-container" href="https://www.chess.com/puzzles/problem/134311">example</a>
 
 
     <div class="flex-div">
@@ -223,9 +223,30 @@
                     <option value="45+">45+</option>
                 </select>
             </div>
+            <div class="form-item">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="form-item">
+                <label for="fcolor">Color</label>
+                <input type="color" id="fcolor" name="fcolor" >
+                </div>
+                <div class="form-item">
+                    <label for="blog">Comments</label>
+                    <br>
+                    <textarea rows ="5" cols="30" id="blog" name="blog" placeholder="NOT ALLOWED" ></textarea>
+                    <br>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="gsearch">Google</label>
+                        <input type="search" id="gsearch" name="gsearch" >
+                        </div>
+
             <div class="form-item center-div">
                 <input type="submit" value="Submit" onclick="submit_form()" class="styled-text button">
             </div>
+                <br>
             <div class="form-item center-div">
                 <input type="reset" class="styled-text button" value="Reset">
             </div>
@@ -234,10 +255,12 @@
 
         </div>
 
-    <div class="flex-div">
+    <div class="flex-div chart">
         <canvas id="myChart"></canvas>
     </div>
-
+    <div class="footer">
+        <p>@MrPipiKado</p>
+    </div>
     <script src='app.js' > </script>
 </body>
 

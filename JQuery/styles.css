@@ -1,0 +1,42 @@
+.active-item{
+    background-color: rgb(255, 195, 82);
+}
+
+.orange{
+    background-color: orange;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+.btn:active{
+    border: none;
+    outline: none;
+}
+
+.btn:focus{
+    border: none;
+    outline: none;
+}
+
+.firs_image{
+    background-image: "./images/Kartoplya-po-selyansky-v-dehovke_siteWebUkr.jpg";
+}
+
+.second_image{
+    background-image: "images/borshh.jpg";
+}
+
+.third_image{
+    background-image: "images/vareniki-s-vishney-retsept.jpg";
+}
+
+img{
+    display: none;
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
+}
